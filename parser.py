@@ -1,13 +1,9 @@
-from sys import argv
 import re
 import sys
 
 ansPrefix = ['0', 'a', 'b', 'c', 'd', 'e', 'f', 'g']
 
-script, filename = argv
-
-file = open(filename)
-testBank = file.read()
+testBank = sys.stdin.read()
 testBank = testBank.split('\n')
 testBank = "".join(testBank)
 testBank = re.split('\d+\. ', testBank)
