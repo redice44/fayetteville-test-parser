@@ -21,7 +21,7 @@ for questionNum in range(len(testBank)):
   # Split into the question and answers
   question = re.split(' [a-z]\. ', question[0])
   # Print question with number prefix
-  print "%s. %s" % (questionNum, question[0])
+  print "%s. %s" % (questionNum+1, question[0])
   # Print answers with answer prefix
   for ans in range(1, len(question)):
     if ansPrefix[ans] == answer:
